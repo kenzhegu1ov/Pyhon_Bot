@@ -1,5 +1,5 @@
 from aiogram import types, Dispatcher
-from config import bot
+from config import bot, ADMINS
 from random import choice
 
 async def delete_sticker(message: types.Message):
@@ -16,10 +16,11 @@ async def bad_words_filter(message: types.Message):
             await message.delete()
             break
 
-    if message.text.lower() == 'game':
-        a = ['⚽', '🎰', '🏀', '🎯', '🎳', '🎲']
-        random = choice(a)
-        await bot.send_dice(message.chat.id, emoji=random)
+    if message.from_user.id in ADMINS:
+        if message.text.lower() == 'game':
+            a = ['⚽', '🎰', '🏀', '🎯', '🎳', '🎲']
+            random = choice(a)
+            await bot.send_dice(message.chat.id, emoji=random)
     else:
         await bot.send_message(message.from_user.id, message.text)
 

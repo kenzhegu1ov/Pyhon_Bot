@@ -1,11 +1,10 @@
 from aiogram import types, Dispatcher
 from config import ADMINS, bot
-import random
 
 
 async def ban(message: types.Message):
     if message.chat.type != "private":
-        if message.from_user.id not in ADMINS[0]:
+        if message.from_user.id not in ADMINS:
             await message.answer("ТЫ НЕ МОЙ БОСС!")
         elif not message.reply_to_message:
             await message.answer("Команда должна быть ответом на сообщение!")
@@ -23,7 +22,7 @@ async def ban(message: types.Message):
 
 async def pin_message(message: types.Message):
     if message.chat.type != "private":
-        if message.from_user.id in ADMINS[0]:
+        if message.from_user.id in ADMINS:
             if message.reply_to_message.text:
                 await message.pin()
     elif message.from_user.id is not ADMINS:

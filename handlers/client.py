@@ -1,8 +1,9 @@
 from aiogram import types, Dispatcher
-from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ParseMode
 from config import bot
 from keyboards.client_kb import start_markup
 from database.bot_db import sql_command_random
+from parser.anime import parser
 
 
 async def start_command(message: types.Message):
@@ -45,8 +46,23 @@ async def get_random_user(message: types.Message):
     await message.answer_photo(
         caption=f"{random_user[1]} {random_user[2]} {random_user[3]} {random_user[4]}")
 
+
+async def get_anime(message: types.Message):
+    animes = parser()
+    for anime in animes:
+        await message.answer(
+            f"<b><a href='{anime['link']}'>{anime['title']}</a></b>\n"
+            f"#Y{anime['year']}\n"
+            f"#{anime['genre']}\n"
+            f"#{anime['country']}\n",
+            reply_markup=InlineKeyboardMarkup().add(
+                InlineKeyboardButton("СМОТРЕТЬ", url=anime['link'])
+            ),
+            parse_mode=ParseMode.HTML
+        )
 def register_handlers_client(dp: Dispatcher):
     dp.register_message_handler(start_command, commands=['start'])
     dp.register_message_handler(help_command, commands=['help'])
     dp.register_message_handler(quiz_1, commands=['quiz'])
     dp.register_message_handler(get_random_user, commands=['get'])
+    dp.register_message_handler(get_anime, commands=['anime'])
