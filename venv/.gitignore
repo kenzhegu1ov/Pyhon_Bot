@@ -1,13 +1,9 @@
 
 
-handlers/youtube.py
-media
-bot.sqlite3
-.env
-.git
-**/.idea/
-__pycache__
+../media
+../.env
+../venv
 pyvenv.cfg
 Scripts
 Lib
-
+.gitignore

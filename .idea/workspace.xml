@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="987e60d3-05b2-4099-90cf-cd2d96d44ac0" name="Changes" comment="gpt">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ad4d7d5d-c612-4e1c-bbb0-4f9f6e0e3ccc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ad4d7d5d-c612-4e1c-bbb0-4f9f6e0e3ccc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/bot.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/youtube.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reqs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/venv/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +68,7 @@
       <recent name="C:\Users\Aman\PycharmProjects\Geeks_month-3\Handlers" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.extra">
+  <component name="RunManager">
     <configuration name="client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Pyhon_Bot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -253,7 +258,7 @@
       <workItem from="1680178423785" duration="2688000" />
       <workItem from="1680268151606" duration="8000" />
       <workItem from="1680425275474" duration="18296000" />
-      <workItem from="1680448276085" duration="25000" />
+      <workItem from="1680448276085" duration="505000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1680150685861</created>
@@ -297,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680448099354</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="gpt">
+      <created>1680448310796</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680448310796</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
