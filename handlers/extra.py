@@ -1,5 +1,4 @@
 
-
 from aiogram import types, Dispatcher
 from handlers.gpt import handle_message
 
