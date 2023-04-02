@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="987e60d3-05b2-4099-90cf-cd2d96d44ac0" name="Changes" comment="gpt">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ad4d7d5d-c612-4e1c-bbb0-4f9f6e0e3ccc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ad4d7d5d-c612-4e1c-bbb0-4f9f6e0e3ccc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/bot.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/youtube.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reqs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/venv/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +64,7 @@
       <recent name="C:\Users\Aman\PycharmProjects\Geeks_month-3\Handlers" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.client">
     <configuration name="client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Pyhon_Bot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -258,7 +254,7 @@
       <workItem from="1680178423785" duration="2688000" />
       <workItem from="1680268151606" duration="8000" />
       <workItem from="1680425275474" duration="18296000" />
-      <workItem from="1680448276085" duration="505000" />
+      <workItem from="1680448276085" duration="768000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1680150685861</created>
@@ -309,7 +305,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680448310796</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="gpt">
+      <created>1680448791759</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680448791759</updated>
+    </task>
+    <task id="LOCAL-00009" summary="gpt">
+      <created>1680448972636</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680448972636</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
