@@ -7,8 +7,9 @@ storage = MemoryStorage()
 
 
 TOKEN = config("TOKEN")
+API_TOKEN = config("GPT_TOKEN")
 
 bot = Bot(TOKEN)
 dp = Dispatcher(bot=bot, storage=storage)
 
-ADMINS = (5688192261, 2041040876, )
+ADMINS = (5688192261, 2041040876,)

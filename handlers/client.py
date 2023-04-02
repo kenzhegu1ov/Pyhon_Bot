@@ -1,9 +1,12 @@
+import io
+
 from aiogram import types, Dispatcher
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ParseMode
+from aiogram.dispatcher import FSMContext
 from config import bot
 from keyboards.client_kb import start_markup
 from database.bot_db import sql_command_random
-from parser.anime import parser
+from parser.laptops import parser
 
 
 async def start_command(message: types.Message):
@@ -47,22 +50,26 @@ async def get_random_user(message: types.Message):
         caption=f"{random_user[1]} {random_user[2]} {random_user[3]} {random_user[4]}")
 
 
-async def get_anime(message: types.Message):
-    animes = parser()
-    for anime in animes:
+async def get_laptops(message: types.Message):
+    laptops = parser()
+    count = 0
+    for laptop in laptops:
+        count += 1
+        if count == 5:
+            break
         await message.answer(
-            f"<b><a href='{anime['link']}'>{anime['title']}</a></b>\n"
-            f"#Y{anime['year']}\n"
-            f"#{anime['genre']}\n"
-            f"#{anime['country']}\n",
+            f"<b><a href='{laptop['link']}'>{laptop['description']}</a></b>\n"
+            f"#{laptop['price']}",
             reply_markup=InlineKeyboardMarkup().add(
-                InlineKeyboardButton("СМОТРЕТЬ", url=anime['link'])
+                InlineKeyboardButton("ОБЗОР", url=laptop['link'])
             ),
             parse_mode=ParseMode.HTML
         )
+
 def register_handlers_client(dp: Dispatcher):
     dp.register_message_handler(start_command, commands=['start'])
     dp.register_message_handler(help_command, commands=['help'])
     dp.register_message_handler(quiz_1, commands=['quiz'])
     dp.register_message_handler(get_random_user, commands=['get'])
-    dp.register_message_handler(get_anime, commands=['anime'])
+    dp.register_message_handler(get_laptops, commands=['laptop'])
+
