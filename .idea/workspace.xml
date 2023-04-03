@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="987e60d3-05b2-4099-90cf-cd2d96d44ac0" name="Changes" comment="gpt">
-      <change beforePath="$PROJECT_DIR$/handlers/fsm_admin_mentor.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/fsm_admin_mentor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +42,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Aman/PycharmProjects/GeeksHomeworks",
+    "last_opened_file_path": "C:/Users/Aman/PycharmProjects/Pyhon_Bot",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -256,6 +257,7 @@
       <workItem from="1680448276085" duration="768000" />
       <workItem from="1680449068660" duration="512000" />
       <workItem from="1680523824542" duration="980000" />
+      <workItem from="1680525434062" duration="147000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1680150685861</created>

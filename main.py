@@ -6,7 +6,7 @@ from database.bot_db import sql_create
 
 async def on_startup(_):
     await schedule.set_scheduler()
-    await bot.send_message(ADMINS[0], "Добби готов служить вам!")
+    await bot.send_message(ADMINS, "Добби готов служить вам!")
     sql_create()
 
 
