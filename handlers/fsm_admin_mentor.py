@@ -6,6 +6,8 @@ from aiogram.dispatcher.filters.state import State, StatesGroup
 from config import ADMINS
 from keyboards import client_kb
 from database.bot_db import sql_command_insert
+
+
 class Mentor(StatesGroup):
     mentor_id = State()
     mentor_name = State()
@@ -20,14 +22,11 @@ async def add_mentor(message: types.Message):
     await message.reply("Введите ID ментора", reply_markup=client_kb.cancel_markup)
 
 
-
 async def process_id(message: types.Message, state: FSMContext):
     async with state.proxy() as data:
         data['id'] = message.from_user.id
     await Mentor.next()
     await message.reply("Введите имя ментора", reply_markup=client_kb.cancel_markup)
-
-
 
 
 async def process_name(message: types.Message, state: FSMContext):
@@ -44,7 +43,6 @@ async def process_direction(message: types.Message, state: FSMContext):
     await message.reply("Введите возраст ментора", reply_markup=client_kb.cancel_markup)
 
 
-
 async def process_age(message: types.Message, state: FSMContext):
     if not message.text.isdigit():
         await message.answer("Пиши числами!")
@@ -56,7 +54,6 @@ async def process_age(message: types.Message, state: FSMContext):
             data['age'] = message.text
         await Mentor.next()
         await message.reply("Введите группу ментора", reply_markup=client_kb.cancel_markup)
-
 
 
 async def process_group(message: types.Message, state: FSMContext):
