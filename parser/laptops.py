@@ -24,7 +24,7 @@ def get_data_from_page(html):
         laptop = {
             "description": item.find('div', class_="productColText").find('span', class_='middle').string,
             "link": item.find('div', class_="productColText").find('a').get("href"),
-            "price": item.find('div', class_="productColText").find('a', class_='price').get("href")
+            "price": item.find('div', class_="productColText").find('a', class_='price').string
         }
         laptops.append(laptop)
     return laptops
